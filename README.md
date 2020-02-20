@@ -19,7 +19,7 @@ Import the repository to your system using abapGit.
 ```abap
 REPORT zabapturtle.
 
-DATA(turtle) = NEW zcl_turtle( height = 800 width = 800 ).
+DATA(turtle) = zcl_turtle=>new( height = 800 width = 800 ).
 
 turtle->set_pen( VALUE #( stroke_width = 2 ) ).
 
